@@ -2,7 +2,7 @@ package pe.edu.upeu.gui;
 
 
 
-import pe.edu.upeu.core.Reportes;
+import pe.edu.upeu.core.Menu;
 import pe.edu.upeu.utils.UtilsX;
 import java.awt.event.*;
 import javax.swing.*;
@@ -104,9 +104,9 @@ public class MainGUI extends JFrame implements ActionListener{
 
     public void panelTabla(final Container contai){
         contai.setBackground(new Color(0,0,255));
-        final Reportes obj3=new Reportes();        
+        final Menu obj3=new Menu();        
         String[] columnas=new String[] {"ID", "Producto", "Cantidad", "Precio", "Marca"};
-        table = new JTable(obj3.reporteDatos(), columnas);
+        table = new JTable(obj3.menuOpciones(), columnas);
         scrollPane = new JScrollPane(table);
         scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
         scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
